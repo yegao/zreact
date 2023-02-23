@@ -1,7 +1,7 @@
 import { REACT_ELEMENT_TYPE } from "../../shared/ReactSymbols";
-import { ElementType, ReactElement, Ref, Key, Props } from "../../shared/ReactTypes";
+import { ElementType, ReactElementType, Ref, Key, Props } from "../../shared/ReactTypes";
 
-export function ReactElement(type: ElementType, key: Key, ref: Ref, props: Props): ReactElement {
+export function ReactElement(type: ElementType, key: Key, ref: Ref, props: Props): ReactElementType {
     return {
         $$typeof: REACT_ELEMENT_TYPE,
         type,
